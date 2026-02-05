@@ -1,1 +1,8 @@
+pypdf
+numpy
+faiss-cpu
+openai
+google-generativeai
+pyyaml
+tqdm
 
