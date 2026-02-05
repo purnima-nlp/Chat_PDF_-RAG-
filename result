@@ -21,3 +21,12 @@ Batches: 100%|██████████████████████
 
 Answer:
  I cannot answer that question using only the provided context. The context does not contain information to respond to "thats cool".
+
+
+Ask > whats swin-fu-sr
+Batches: 100%|███████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 30.75it/s]
+
+Answer:
+ SwinFuSR is an RGB-guided thermal image super-resolution architecture based on Swin transformers, inspired by SwinFusion. It has few parameters and outperforms state-of-the-art models in terms of Peak Signal to Noise Ratio (PSNR) and Structural SIMilarity (SSIM), achieving 3rd place in Track 2 of the PBVS 2024 Thermal Image Super-Resolution Challenge. It also proposes a training method that improves robustness to missing RGB input images.
+
+Ask >
