@@ -1,0 +1,23 @@
+
+Ask > summarize the document
+Batches: 100%|███████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 25.60it/s]
+
+Answer:
+ SwinFuSR is a novel architecture proposed for RGB-guided thermal image super-resolution, specifically for the PBVS 2024 TISR Track 2 challenge, aiming to upscale low-resolution IR images (x8) using a medium-resolution RGB image.
+
+The architecture comprises three modules:
+1.  **Shallow feature extraction:** Uses convolutional layers followed by N Swin Transformer (STL) layers.
+2.  **Deep feature extraction and fusion:** Employs L Attention-guided Cross-domain Fusion (ACF) blocks to combine IR and RGB features, followed by concatenation and convolution.
+3.  **Deep feature reconstruction:** Consists of P Swin Transformer layers to refine merged features and three convolution layers for image reconstruction.
+
+It features two branches for RGB and IR images, similar to SwinFusion, with bicubic interpolation performed on the IR image to match RGB dimensions. A skip connection from the interpolated IR image to the reconstructed image is included to improve convergence speed and final performance by 0.3% without adding parameters.
+
+For training, an Adam optimizer was used with a learning rate of 4x10^-4 initially, then reduced to 1x10^-4. A combination of L1 and L2 pixel losses was utilized, with L1 for initial epochs followed by L2. The training lasted 72 hours (4300 epochs) on two Tesla V100 GPUs. Ablation studies indicated that increasing the number of modules in the reconstruction module showed the most significant performance improvement.
+
+SwinFuSR demonstrated superior performance compared to existing methods like GuidedSR and CoRefusion on the PBVS24 Track 2 dataset, achieving a PSNR of 28.96 and SSIM of 0.878 with 3.30M parameters, producing outputs closer and clearer to the ground-truth. The model's generalization capabilities were also tested on the Simultaneously-collected multimodal Lying Pose (SLP) dataset.
+
+Ask > thats cool
+Batches: 100%|███████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 31.84it/s]
+
+Answer:
+ I cannot answer that question using only the provided context. The context does not contain information to respond to "thats cool".
