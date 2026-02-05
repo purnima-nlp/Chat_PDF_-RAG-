@@ -1,1 +1,5 @@
 This repository implements a production-style Retrieval-Augmented Generation (RAG) system that allows users to chat with PDF documents using semantic search and large language models. The pipeline extracts and cleans text from PDFs, splits it into overlapping chunks, converts each chunk into dense embeddings, and stores them in a FAISS vector database for fast similarity retrieval. At query time, relevant chunks are retrieved and injected into a prompt sent to either OpenAI or Gemini APIs to generate grounded, context-aware answers. The system is fully modular, scalable, and designed for easy extension to multimodal data such as videos and images.
+to test the code get the api keys from openAI or Gemini (your choice of embeddings).
+set the keys in your environment 
+the result i have got is pasted in result.txt file so you can check and see what to expect from model (gemini in my case) when asked to summarize the document.
+i have used a research paper from cvpr and asked gemini to summarize it.
